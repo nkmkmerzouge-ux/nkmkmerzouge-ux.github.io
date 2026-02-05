@@ -19,9 +19,15 @@
       margin-bottom: 20px;
     }
 
+    .manga-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      margin-top: 20px;
+    }
+
     .manga {
-      display: inline-block;
-      margin: 20px;
       text-align: center;
     }
 
@@ -38,7 +44,7 @@
 
     .manga-title {
       margin-top: 10px;
-      font-size: 1.2em;
+      font-size: 1.1em;
       color: #800080;
     }
 
@@ -50,11 +56,40 @@
 </head>
 <body>
   <h1>مرحبًا بك في موقعي</h1>
-  <div class="manga">
-    <a href="manga1.html">
-      <img src="https://i.postimg.cc/wBvB0RNY/IMG-20260205-112446.jpg" alt="مانغا 1">
-      <div class="manga-title">مانغا 1</div>
-    </a>
+
+  <div class="manga-grid">
+    <!-- المانغا الأولى -->
+    <div class="manga">
+      <a href="manga1.html">
+        <img src="https://i.postimg.cc/wBvB0RNY/IMG-20260205-112446.jpg" alt="مانغا 1">
+        <div class="manga-title">مانغا 1</div>
+      </a>
+    </div>
+
+    <!-- المانغا الثانية -->
+    <div class="manga">
+      <a href="manga2.html">
+        <img src="https://i.postimg.cc/QF2sMtSf/IMG-20260205-112446.jpg" alt="مانغا 2">
+        <div class="manga-title">مانغا 2</div>
+      </a>
+    </div>
+
+    <!-- يمكن إضافة مانغا ثالثة -->
+    <div class="manga">
+      <a href="#">
+        <img src="https://via.placeholder.com/150" alt="مانغا 3">
+        <div class="manga-title">مانغا 3</div>
+      </a>
+    </div>
+
+    <!-- مانغا رابعة -->
+    <div class="manga">
+      <a href="#">
+        <img src="https://via.placeholder.com/150" alt="مانغا 4">
+        <div class="manga-title">مانغا 4</div>
+      </a>
+    </div>
+
   </div>
 </body>
 </html>
